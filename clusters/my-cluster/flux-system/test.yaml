@@ -4,18 +4,3 @@ kind: Namespace
 metadata:
   name: test
 ---
-apiVersion: batch/v1
-kind: Job
-metadata:
-  name: example-test
-  namespace: test
-spec:
-  template:
-    spec:
-      containers:
-      - command:
-        - "true"
-        image: ubuntu:latest
-        name: example-test
-      restartPolicy: Never
----
