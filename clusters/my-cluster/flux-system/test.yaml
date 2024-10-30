@@ -9,6 +9,8 @@ kind: Job
 metadata:
   name: example-test
   namespace: test
+  annotations:
+    test-key: test-value
 spec:
   template:
     spec:
