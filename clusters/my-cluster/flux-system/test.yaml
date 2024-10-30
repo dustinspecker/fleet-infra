@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - command:
-        - "date"
+        - "true"
         image: ubuntu:latest
         name: example-test
       restartPolicy: Never
